@@ -190,23 +190,23 @@ if ans1 == "1":
 elif ans1 == "2":
     score_inventor += 1
 
-print("You gather information in a neutral zone city.")
-print("The inventor's daughter and the informant offer to provide information.")
-print("1) Trust the inventor's daughter and accompany her to investigate")
-print("2) Buy information from an informant for money")
-print("3) Investigate on your own")
+    print("You gather information in a neutral zone city.")
+    print("The inventor's daughter and the informant offer to provide information.")
+    print("1) Trust the inventor's daughter and accompany her to investigate")
+    print("2) Buy information from an informant for money")
+    print("3) Investigate on your own")
 
-ans2 = get_choice(["1", "2", "3"])
+    ans2 = get_choice(["1", "2", "3"])
 
-if ans2 == "1":
-    score_inventor += 1
-    captured = 1
-elif ans2 == "2":
-    score_neutral += 1
-    captured = 1
-elif ans2 == "3":
-    score_neutral += 1
-    captured = 1
+    if ans2 == "1":
+        score_inventor += 1
+        captured = 1
+    elif ans2 == "2":
+        score_neutral += 1
+        captured = 1
+    elif ans2 == "3":
+        score_neutral += 1
+        captured = 1
 
 if captured == 1:
     print("You are captured by the rebel leader on Dark Island.")
